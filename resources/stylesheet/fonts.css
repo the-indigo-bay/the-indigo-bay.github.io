@@ -1,18 +1,18 @@
 h1 {
-	font: 100 2rem/1.2 "Raleway";
-	color: hsl(000, 0%, 33%);
+	font: 500 2rem/1.2 "Pacifico", cursive;
+	color: hsl(000, 0%, 100%);
 	text-align: center;
 }
 
 h2 {
-	font: 100 0.8rem/1.2 "Raleway";
-	color: hsl(000, 0%, 33%);
+	font: 700 2rem/1.2 "Amatic SC", cursive;
+	color: hsl(000, 0%, 80%);
 	text-align: center;
 	margin: 0 10px 0 10px;
 }
 
 h3 {
-	font: 600 0.85rem/1.2 "Raleway";
+	font: 700 1rem/1.2 "Amatic SC", cursive;
 	color: hsl(174, 72%, 56%);
 	text-align: center;
 	margin: 10px 0 5px 0;
@@ -31,18 +31,18 @@ h5 {
 }
 
 p {
-	font: 400 0.65rem/1.5 "Raleway";
-	color: hsl(000, 0%, 33%);
+	font: 700 0.65rem/1.5 "Amatic SC", cursive;
+	color: hsl(000, 0%, 100%);
 	text-align: center;
 }
 
 li {
-	font: 400 0.65rem/1.5 "Raleway";
+	font: 700 1.25rem/1.5 "Amatic SC", cursive;
 	color: hsl(000, 0%, 33%);
 	list-style-type: none;
 }
 
-ul.centerList li{
+ul li{
 	text-align: center;
 }
 
@@ -59,8 +59,16 @@ a {
 	text-decoration: underline;
 }
 
+input {
+	font: 700 0.65rem/1.5 "Amatic SC", cursive;
+}
+
 li a {
 	text-decoration: none;
+}
+
+.txtLight {
+	color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 768px) {		/* Desktop */

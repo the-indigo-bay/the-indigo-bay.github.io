@@ -3,7 +3,24 @@
 }
 
 .img-thumbnail {
-	width: 200px;
+	width: 100px;
+}
+
+.imgBlur {
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.img1 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/the-depot-cleethorpes.jpg");
+}
+
+.img2 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/the-depot-cleethorpes-2.jpg");
+}
+
+.img3 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/lincoln-engine-shed-stage.jpg");
 }
 
 @media (min-width: 768px) {		/* Desktop */

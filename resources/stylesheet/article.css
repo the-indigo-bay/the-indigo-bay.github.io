@@ -1,0 +1,16 @@
+.hoverArticle {
+	position: absolute;
+	text-align: center;
+}
+
+.blue {
+	background-color: hsl(198, 50%, 32%);
+}
+
+.articleTitle {
+	padding: 40px 0 20px 0;
+}
+
+.articleBody {
+	padding-bottom: 10px;
+}

@@ -4,6 +4,12 @@ body {
 
 .pageTop {
 	height: 50vh;
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/engine-shed-nerves.jpg");
+}
+
+.title {
+	top: 10vh;
+	left: 10vw;
 }
 
 @media (min-width: 768px) {		/* Desktop */
