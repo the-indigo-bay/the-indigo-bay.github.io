@@ -7,6 +7,14 @@
 	background-color: hsl(198, 50%, 32%);
 }
 
+.sand {
+	background-color: hsl(21.57,86.41%,79.8%);
+}
+
+.sand p {
+	color: black;
+}
+
 .articleTitle {
 	padding: 40px 0 20px 0;
 }

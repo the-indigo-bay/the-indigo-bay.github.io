@@ -67,6 +67,10 @@ li a {
 	text-decoration: none;
 }
 
+th, td {
+	text-align: center;
+}
+
 @media (min-width: 768px) {		/* Desktop */
 	h1 {
 		font: 3rem;
