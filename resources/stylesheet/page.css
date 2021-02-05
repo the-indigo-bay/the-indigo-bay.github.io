@@ -8,6 +8,7 @@ body {
 }
 
 .title {
+	font: "Pacifico", cursive;
 	top: 10vh;
 	left: 10vw;
 }

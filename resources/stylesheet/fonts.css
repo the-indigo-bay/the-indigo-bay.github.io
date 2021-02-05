@@ -59,16 +59,12 @@ a {
 	text-decoration: underline;
 }
 
-input {
+input, button {
 	font: 700 0.65rem/1.5 "Amatic SC", cursive;
 }
 
 li a {
 	text-decoration: none;
-}
-
-.txtLight {
-	color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 768px) {		/* Desktop */
