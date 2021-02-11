@@ -8,15 +8,16 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
 var modal = function(){
-	if (img.classList.contains('socialLink') {
-		myModal.style.display = "block";
-		modalImg.src = this.src;
-		captionText.innerHTML = this.alt;
-	}
+	myModal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
 }
 
 for (var i = 0; i < img.length; i++) {
-	img[i].addEventListener('click', modal, false);
+	if (img[i].classList.contains('socialLink')) {
+	} else {
+		img[i].addEventListener('click', modal, false);
+	}
 }
 
 // Get the <span> element that closes the modal
