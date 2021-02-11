@@ -8,9 +8,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
 var modal = function(){
-	myModal.style.display = "block";
-	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
+	if (img.classList.contains('socialLink') {
+		myModal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+	}
 }
 
 for (var i = 0; i < img.length; i++) {
