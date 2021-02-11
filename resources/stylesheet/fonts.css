@@ -18,6 +18,10 @@ h3 {
 	margin: 10px 0 5px 0;
 }
 
+.sand .row .col h3 {
+	color: hsl(174, 72%, 30%);
+}
+
 h4 {
 	font: 700 1rem/1.2"Raleway";
 	color: hsl(60, 3%, 53%);

@@ -27,6 +27,10 @@
 	width: 20px;
 }
 
+.img-thumbnail {
+	width: 200px;
+}
+
 @media (min-width: 768px) {		/* Desktop */
 	.img-thumbnail {
 		width: 500px;

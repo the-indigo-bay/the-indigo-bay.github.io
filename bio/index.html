@@ -31,6 +31,8 @@
 		<link rel="stylesheet" href="https://the-indigo-bay.github.io/resources/stylesheet/article.css">
 		<link rel="stylesheet" href="https://the-indigo-bay.github.io/resources/stylesheet/scroll_lock_footer.css">
 		<link rel="stylesheet" href="https://the-indigo-bay.github.io/resources/stylesheet/anchor.css">
+		<link rel="stylesheet" href="https://the-indigo-bay.github.io/resources/stylesheet/table.css">
+		<link rel="stylesheet" href="https://the-indigo-bay.github.io/resources/stylesheet/modal.css">
 	</head>
 
 	<header>
@@ -80,10 +82,15 @@
 	</header>
 
 	<body>
+		<div id="myModal" class="myModal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
 		<div class="container sand">
-			<div class="row">
+			<div class="row articleTitle">
 				<div class="col">
-					<img class="img-thumbnail" src="https://the-indigo-bay.github.io/resources/images/the depot/the-depot-callum.jpg" alt="Callum Minks at The Depot in Cleethorpes">
+					<img class="img-thumbnail modalImg" src="https://the-indigo-bay.github.io/resources/images/the depot/the-depot-callum.jpg" alt="Callum Minks at The Depot in Cleethorpes">
 				</div>
 				<div class="col">
 					<h3>Callum Minks</h3>
@@ -91,7 +98,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<table class="table table-dark table-sm">
+				<table class="table table-bordered table-dark table-sm">
 				<tr>
 					<th scope="col" colspan="2">Role</th>
 					<th scope="col">Age</th>
@@ -99,15 +106,18 @@
 				<tr>
 					<td>Rhythm Guitarist</td>
 					<td>Frontman/Singer</td>
-					<td>19</td>
+					<td>20</td>
 				</tr>
 				</table>
 			</div>
 		</div>
+
+		<div class="indigoFAQ"></div>
+
 		<div class="container blue">
-			<div class="row">
+			<div class="row articleTitle">
 				<div class="col">
-					<img class="img-thumbnail" src="https://the-indigo-bay.github.io/resources/images/yardbirds/yardbirds-alex.jpg" alt="Alex Plater at The Yardbirds in Cleethorpes">
+					<img class="img-thumbnail modalImg" src="https://the-indigo-bay.github.io/resources/images/yardbirds/yardbirds-alex.jpg" alt="Alex Plater at The Yardbirds in Cleethorpes">
 				</div>
 				<div class="col">
 					<h3>Alex Plater</h3>
@@ -115,7 +125,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<table class="table table-dark table-sm">
+				<table class="table table-bordered table-dark table-sm">
 					<tr>
 						<th scope="col" colspan="2">Role</th>
 						<th scope="col">Age</th>
@@ -123,15 +133,18 @@
 					<tr>
 						<td>Lead Guitarist</td>
 						<td>Background Singer</td>
-						<td>21</td>
+						<td>20</td>
 					</tr>
 				</table>
 			</div>
 		</div>
+
+		<div class="indigoFAQ"></div>
+
 		<div class="container sand">
-			<div class="row">
+			<div class="row articleTitle">
 				<div class="col">
-					<img class="img-thumbnail" src="https://the-indigo-bay.github.io/resources/images/the depot/the-depot-george.jpg" alt="George Gray at The Depot in Cleethorpes"/>
+					<img class="img-thumbnail modalImg" src="https://the-indigo-bay.github.io/resources/images/the depot/the-depot-george.jpg" alt="George Gray at The Depot in Cleethorpes"/>
 				</div>
 				<div class="col">
 					<h3>George Grey</h3>
@@ -139,7 +152,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<table class="table table-dark table-sm">
+				<table class="table table-bordered table-dark table-sm">
 					<tr>
 						<th scope="col">Role</th>
 						<th scope="col">Age</th>
@@ -151,10 +164,13 @@
 				</table>
 			</div>
 		</div>
+
+		<div class="indigoFAQ"></div>
+
 		<div class="container blue">
-			<div class="row">
+			<div class="row articleTitle">
 				<div class="col">
-					<img class="img-thumbnail" src="https://the-indigo-bay.github.io/resources/images/misc/grimsby-central-hall.jpg" alt="Amias Burrows In Grimsby Central Hall in Grimsby"/>
+					<img class="img-thumbnail modalImg" src="https://the-indigo-bay.github.io/resources/images/misc/grimsby-central-hall.jpg" alt="Amias Burrows In Grimsby Central Hall in Grimsby"/>
 				</div>
 				<div class="col">
 					<h3>Amias Burrows</h3>
@@ -162,7 +178,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<table class="table table-dark table-sm">
+				<table class="table table-bordered table-dark table-sm">
 					<tr>
 						<th scope="col" colspan="2">Role</th>
 						<th scope="col">Age</th>
@@ -184,6 +200,9 @@
 			<!-- Other -->
 		<script src="https://the-indigo-bay.github.io/resources/javascript/anchor.js"></script>
 		<script src="https://the-indigo-bay.github.io/resources/javascript/parallax.js"></script>
+
+				
+	<script src="https://the-indigo-bay.github.io/resources/javascript/modal.js"></script>
 	</body>
 
 	<footer>

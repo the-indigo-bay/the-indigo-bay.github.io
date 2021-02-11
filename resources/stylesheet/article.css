@@ -22,3 +22,8 @@
 .articleBody {
 	padding-bottom: 10px;
 }
+
+title {
+	width: 85%;
+	margin: auto;
+}
