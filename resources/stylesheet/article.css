@@ -16,11 +16,11 @@
 }
 
 .green {
-	background-color: hsl(116%, 46%, 50%);
+	background-color: hsl(116, 46%, 50%);
 }
 
 .black {
-	background-color: hsl(285%, 18%, 4%);
+	background-color: hsl(285, 18%, 4%);
 }
 
 .articleTitle {
