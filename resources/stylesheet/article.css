@@ -19,8 +19,20 @@
 	background-color: hsl(116, 46%, 50%);
 }
 
-.black {
+.richBlack {
 	background-color: hsl(285, 18%, 4%);
+}
+
+.orange {
+	background-color: hsl(6, 71%, 44%);
+}
+
+.smokyBlack {
+	background-color: hsl(23, 47%, 7%);
+}
+
+.wildBlue {
+	background-color: hsl(218, 50%, 73%);
 }
 
 .articleTitle {
