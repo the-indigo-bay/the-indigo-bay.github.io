@@ -15,6 +15,14 @@
 	color: black;
 }
 
+.green {
+	background-color: hsl(116%, 46%, 50%);
+}
+
+.black {
+	background-color: hsl(285%, 18%, 4%);
+}
+
 .articleTitle {
 	padding: 40px 0 20px 0;
 }
