@@ -27,6 +27,12 @@
 	width: 20px;
 }
 
+@media (min-width: 1281px) {
+	.imgLogo img, .imgLogo {
+		width: 40px;
+	}
+}
+
 .img-thumbnail {
 	width: 200px;
 }

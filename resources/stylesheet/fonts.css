@@ -84,78 +84,87 @@ th, td {
 	text-align: center;
 }
 
-@media (min-width: 768px) {		/* Desktop */
+@media (min-width: 1281px) {		/* Desktop */
 	h1 {
-		font: 3rem;
+		font-size: 3rem;
 	}
 
 	h2 {
-		font: 100 1.25rem/1.2 "Raleway";
+		font-size: 1.25rem;
 	}
 
 	h3 {
-		font: 600 1.2rem/1.2 "Raleway";
+		font-size: 1.2rem;
 	}
 
 	h4 {
-		font: 700 1.5rem/1.2 "Raleway";
+		font-size: 1.5rem;
 	}
 
 	h5 {
-		font: 500 1rem/1.2 "Raleway";
+		font-size: 1rem;
 	}
 
 	p {
-		font: 400 1rem/1.5 "Raleway";
+		font-size: 1rem;
 	}
 
 	li {
-		font: 400 1rem/1.5 "Raleway";
+		font-size: 1rem;
+	}
+
+	.nav-item {
+		font-size: 2rem;
+		padding: 0 20px 0 20px;
 	}
 
 	label {
-		font: 100 1rem/1.2 "Raleway";
+		font-size: 1rem;
 	}
 
 	input, textarea {
-		font: 100 1rem/1.2 "Raleway";
+		font-size: 1rem;
 	}
 }
 
-@media (min-width: 600px) {		/* Tablet */
+@media (min-width: 1025px) and (max-width: 1280px) {		/* Tablet (portrait) */
 	h1 {
-		font: 3rem;
+		font-size: 3rem;
 	}
 
 	h2 {
-		font: 100 1rem/1.2 "Raleway";
+		font-size: 1rem;
 	}
 
 	h3 {
-		font: 600 0.95rem/1.2 "Raleway";
+		font-size: 0.95rem;
 	}
 
 	h4 {
-		font: 700 1.25rem/1.2 "Raleway";
+		font-size: 1.25rem;
 	}
 
 	h5 {
-		font: 500 0.9rem/1.2 "Raleway";
+		font-size: 0.9rem;
 	}
 
 	p {
-		font: 400 0.8rem/1.5 "Raleway";
+		font-size: 0.8rem;
 	}
 
 	li {
-		font: 400 0.8rem/1.5 "Raleway";
+		font-size: 0.8rem;
 	}
 
 	label {
-		font: 100 0.8rem/1.2 "Raleway";
+		font-size: 0.8rem;
 	}
 
 	input, textarea {
-		font: 100 0.8rem/1.2 "Raleway";
+		font-size: 0.8rem;
 	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {		/* Tablet (Landscape) */
+
 }
