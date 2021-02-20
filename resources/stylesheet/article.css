@@ -69,3 +69,7 @@ title {
 	display: inline;
 	padding: 0 10px 0 10px;
 }
+
+table {
+	margin: 0;
+}
