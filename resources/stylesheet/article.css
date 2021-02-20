@@ -53,9 +53,19 @@
 
 .articleBody {
 	padding-bottom: 10px;
+	width: 100%;
 }
 
 title {
 	width: 85%;
 	margin: auto;
+}
+
+.linkIcon {
+	width: 20px;
+}
+
+.horList Li {
+	display: inline;
+	padding: 0 10px 0 10px;
 }

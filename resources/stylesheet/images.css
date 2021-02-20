@@ -23,7 +23,7 @@
 	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/lincoln-engine-shed-stage.jpg");
 }
 
-.imgLogo img {
+.imgLogo img, .imgLogo {
 	width: 20px;
 }
 
