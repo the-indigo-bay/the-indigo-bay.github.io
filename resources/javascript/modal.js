@@ -14,7 +14,7 @@ var modal = function(){
 }
 
 for (var i = 0; i < img.length; i++) {
-	if (img[i].classList.contains('socialLink')) {
+	if (img[i].classList.contains('socialLink') || img[i].classList.contains('modal-content')) {
 	} else {
 		img[i].addEventListener('click', modal, false);
 	}
