@@ -27,7 +27,7 @@ h3 {
 }
 
 h4 {
-	font: 700 1rem/1.2 "Caviat", cursive;
+	font: 700 1rem/1.2 "Amatic SC", cursive;
 	color: hsl(60, 3%, 53%);
 	text-align: center;
 }
@@ -70,6 +70,11 @@ input, textarea {
 
 a {
 	text-decoration: underline;
+	color: hsl(24, 100%, 50%);
+}
+
+a:hover {
+	color: hsl(24, 100%, 40%);
 }
 
 input, button {
@@ -90,11 +95,11 @@ th, td {
 	}
 
 	h2 {
-		font-size: 1.25rem;
+		font-size: 2.5rem;
 	}
 
 	h3 {
-		font-size: 1.2rem;
+		font-size: 1.75rem;
 	}
 
 	h4 {
@@ -114,7 +119,7 @@ th, td {
 	}
 
 	.nav-item {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		padding: 0 20px 0 20px;
 	}
 
@@ -124,6 +129,10 @@ th, td {
 
 	input, textarea {
 		font-size: 1rem;
+	}
+
+	button {
+		font-size: 2rem;
 	}
 }
 

@@ -1,5 +1,6 @@
 body {
 	margin-bottom: 33px;
+	background-color: hsl(188, 65%, 72%);
 }
 
 .pageTop {
@@ -27,4 +28,8 @@ body {
 	.pageTop {
 		height: 60vh;
 	}
+}
+
+.table {
+	margin: 0;
 }
