@@ -15,7 +15,7 @@ h3 {
 	font: 700 1rem/1.2 "Amatic SC", cursive;
 	color: hsl(174, 72%, 56%);
 	text-align: center;
-	margin: 10px 0 5px 0;
+	padding: 10px 0 5px 0;
 }
 
 .sand .row .col h3 {
