@@ -2,4 +2,8 @@
 User-agent: *
 Allow: /
 
-Sitemap:the-indigo-bay.github.io/sitemap.xml
+# Group 2
+User-agent: *
+Disallow: 404.html
+
+Sitemap:indigobay.uk/sitemap.xml
