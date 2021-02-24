@@ -81,6 +81,14 @@ input, button {
 	font: 700 0.65rem/1.5 "Amatic SC", cursive;
 }
 
+button.orange {
+	background-color: hsl(24, 100%, 50%);
+}
+
+button.orange:hover {
+	background-color: hsl(24, 100%, 40%);
+}
+
 li a {
 	text-decoration: none;
 }
