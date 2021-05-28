@@ -12,10 +12,14 @@
 	float: center;
 }
 
-.footerElement{
+p.footerElement {
 	background-color: grey;
 	color: white;
 	font: 400 0.4rem/1.5 "Raleway";		/* 0.5rem */	
+}
+
+img.footerElement {
+	width: 5vw;
 }
 
 footer{
