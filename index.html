@@ -3,181 +3,123 @@
 <html lang="en">
 	<head>
 			<!-- Meta Tags -->
-		<meta charset="UTS-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="The new website for your favourite band, Indigo bay. Here is where you can find all of our event information & releases.">
+		<meta name="description" content="Indigo Bay is a British band from Lincolnshire who formed over their love for indie songs and the Beatles.">
 
 			<!-- Page title -->
 		<title>Homepage | The Indigo Bay</title>
 
 			<!-- Icon Image -->
-		<link rel="icon" href="resources/images/rsz_indigo-bay-logo.ico" type="image/x-icon"/>
+		<link rel="icon" href="./res/img/logo.ico" type="image/x-icon"/>
 		
 			<!-- Stylesheets -->
-		<link rel="stylesheet" href="resources/stylesheet/reset.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">			<!-- Pacifico -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">		<!-- Amatic SC -->
-
-		<link rel="stylesheet" href="debug.css" disabled="true">
-
-		<link rel="stylesheet" href="resources/stylesheet/scroll_lock_footer.css">
-		<link rel="stylesheet" href="resources/stylesheet/fonts.css">
-		<link rel="stylesheet" href="resources/stylesheet/image_overlay.css">
-		<link rel="stylesheet" href="resources/stylesheet/page.css">
-		<link rel="stylesheet" href="resources/stylesheet/images.css">
-		<link rel="stylesheet" href="resources/stylesheet/parallax.css">
-		<link rel="stylesheet" href="resources/stylesheet/article.css">
-		<link rel="stylesheet" href="resources/stylesheet/anchor.css">
-		<link rel="stylesheet" href="resources/stylesheet/modal.css">
+		<link rel="stylesheet" href="./res/css/home.css">
 	</head>
 
 	<body>
 		<header>
-			<div class="pageTop parallaxImage imgBlur"></div>
-
-			<div class="hoverArticle title">
+			<div id='title'>
+				<div id='background'></div>
 				<h1>Indigo Bay</h1>
 			</div>
-			<nav class="navbar sticky-top navbar-expand-lg justify-content-right navbar-light bg-light">
-				<a class="navbar-brand" href="https://indigobay.uk">
-					<img src="resources/images/rsz_indigo-bay-logo.png" alt="Indigo Bay Logo" width="50px"/>
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse w-100" id="navbarContent">
-					<ul class="navbar-nav mr-auto mt-2 mt-lrg-0">
-						<li class="nav-item active">
-							<a href="https://indigobay.uk" class="nav-link">Home</a>
+			<div id='nav' class='dark'>
+				<img src='./res/img/logo.png' alt='Indigo Bay Logo'/>
+				<svg viewbox='0 0 100 100' id='hamburger' onClick='showNav(this)'>
+					<line id='top' x1='10' x2='90' y1='15' y2='15'/>
+					<line id='middle' x1='10' x2='90' y1='50' y2='50'/>
+					<line id='bottom' x1='10' x2='90' y1='85' y2='85'/>
+				</svg>
+				<nav class='dark'>
+					<ul>
+						<li>
+							<a href='./'>Home</a>
 						</li>
-						<li class="nav-item">
-							<a href="https://indigobay.uk/bio" class="nav-link">About the Members</a>
+						<li>
+							<a href='./about'>About the Members</a>
 						</li>
-						<li class="nav-item">
-							<a href="https://indigobay.uk/archive" class="nav-link">Music Archive</a>
+						<li>
+							<a href='./archive'>Music Archive</a>
 						</li>
-						<li class="nav-item">
-							<a href="https://indigobay.uk/dates" class="nav-link">Event Dates</a>
+						<li>
+							<a href='./dates'>Event Dates</a>
 						</li>
-						<li class="nav-item">
-							<a href="https://indigobay.uk/contact" class="nav-link">Contact Us</a>
+						<li>
+							<a href='./contact'>Contact Us</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Music Links</a>
-							<ul class="dropdown-menu">
-								<li class="imgLogo">
-									<a href="https://open.spotify.com/artist/4vQpBhAY8a26fIfcUceOZ5" class="dropdown-item">Spotify<img class="socialLink" src="resources/images/logos/spotify.svg" alt="Spotify logo link, Artist"/></a>
+						<li>
+							<a role='button' id='music'>Music Links</a>
+							<ul>
+								<li>
+									<a href='https://open.spotify.com/artist/4vQpBhAY8a26fIfcUceOZ5'>Spotify</a>
 								</li>
-								<li><hr class="dropdown-divider"></li>
-								<li class="imgLogo">
-									<a href="https://itunes.apple.com/gb/artist/indigo-bay/id1234909681" class="dropdown-item">Apple Music<img class="socialLink" src="resources/images/logos/apple-black.svg" alt="Apple Music logo link, Artist"/></a>
+								<li>
+									<a href='https://itunes.apple.com/gb/artist/indigo-bay/id1234909681'>Apple Music</a>
 								</li>
-								<li><hr class="dropdown-divider"></li>
-								<li class="imgLogo">
-									<a href="https://www.youtube.com/playlist?list=OLAK5uy_mVn-tV6A_WqBoXnDeRXlh72ys1XSB6Cek" class="dropdown-item">Youtube<img class="socialLink" src="resources/images/logos/youtube-icon.svg" alt="Youtube logo link, Artist"/></a>
+								<li>
+									<a href='https://www.youtube.com/playlist?list=OLAK5uy_mVn-tV6A_WqBoXnDeRXlh72ys1XSB6Cek'>Youtube</a>
 								</li>
-								<li><hr class="dropdown-divider"></li>
-								<li class="imgLogo">
-									<a href="https://music.youtube.com/channel/UClhtbQ_asADzrya1uSRTwCg" class="dropdown-item">Youtube Music<img class="socialLink" src="resources/images/logos/youtube-music.svg" alt="Youtube Music logo link, Artist"/></a>
+								<li>
+									<a href='https://music.youtube.com/channel/UClhtbQ_asADzrya1uSRTwCg'>YouTube Music</a>
+								</li>
+								<li>
+									<a href='https://soundcloud.com/user-796951916'>Soundcloud</a>
 								</li>
 							</ul>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expand="false">Social Links</a>
-							<ul class="dropdown-menu">
-								<li class="col nav-item imgLogo">
-									<a href="https://www.instagram.com/theindigobay" class="dropdown-item">Instagram<img class="socialLink" src="resources/images/logos/instagram.svg" alt="Instagram logo link"/></a>
+						<li>
+							<a role='button' id='social'>Social Links</a>
+							<ul>
+								<li>
+									<a href='https://www.instagram.com/theindigobay'>Instagram</a>
 								</li>
-								<li><hr class="dropdown-divider"></li>
-								<li class="col nav-item imgLogo">
-									<a href="https://www.facebook.com/theindigobay" class="dropdown-item">Facebook<img class="socialLink" src="resources/images/logos/facebook.svg" alt="Facebook logo link"/></a>
+								<li>
+									<a href='https://www.facebook.com/theindigobay'>Facebook</a>
 								</li>
-								<li><hr class="dropdown-divider"></li>
-								<li class="col nav-item imgLogo">
-									<a href="https://twitter.com/theindigobay" class="dropdown-item">Twitter<img class="socialLink" src="resources/images/logos/twitter.svg" alt="Twitter logo link"/></a>
+								<li>
+									<a href='https://twitter.com/theindigobay'>Twitter</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		</header>
-		<div id="myModal" class="myModal">
-			<span class="close">&times;</span>
-			<img class="modal-content" id="img01">
-			<div id="caption"></div>
-		</div>
-		<div class="container-fluid blue">
-			<div class="row articleTitle">
-				<h2 class="col">Latest Release</h2>
+		<div id='latest' class='primary'>
+			<h2>Latest Release</h2>
+			<img src='./res/img/album-art/bleach.jpg' alt='Bleach Album Art'/>
+			<div id='description'>
+				<h3>Bleach</h3>
+				<p>This song represents how we can sometimes end up fighting our own mind for the mental freedom we all want. When we look back to our childhood when we didn't have to worry about so much. This song has been moulded from our own experiences and battles and hope that it can alleviate some of the issues you may be facing in your daily life. We recorded this song at <a href='https://sugarhousemusic.co.uk'>Sugar House Music</a> in Saint Helens. The artwork was made by the amazing <a href='https://instagram.com/emilydianelund'>Emily Diane Lund</a>.</p>
 			</div>
-			<div class="row articleBody">
-				<div class="col">
-					<img class="img-thumbnail" src="resources/images/album-art/bleach.jpg" alt="Bleach Cover Art">
-				</div>
-				<div class="col">
-					<h3>Bleach</h3>
-					<p>This song represents how we can sometimes end up fighting our own mind for the mental freedom we all want.  When we look back to our childhood when we didn't have to worry about so much.  This song has been moulded from our own experiences and battles and hope that it can alleviate some of the issues you may be facing in your daily life.  We recorded this song at <a href="https://sugarhousemusic.co.uk">Sugar House Music</a> in Saint Helens.  The artwork was made by the amazing <a href="https://instagram.com/emilydianelund">Emily Diane Lund</a>.</p>
-				</div>
-			</div>
-			<div class="row articleBody">
-				<div class="col">
-					<iframe src="https://open.spotify.com/embed/track/0GbwRfDPZ9P00VErTN9g9b" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-			</div>
-			<div class="row articleBody">
-				<div class="d-flex col justify-content-center">
-					<button onclick="window.location.href='https://indigobay.uk/archive'" type="button" class="btn btn-info btn-sm">Go to Song Archives</button>
-				</div>
-				<div class="d-flex col justify-content-center">
-					<button type="button" class="btn btn-info btn-sm" onclick="window.location.href='https://artists.landr.com/692531057471'">Bleach links</button>
-				</div>
+<iframe src="https://open.spotify.com/embed/track/0GbwRfDPZ9P00VErTN9g9b"frameBorder="0"allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+			<div id='button'>
+				<a class='button' href='/archive'>Go to Song Archives</a>
+				<a class='button' href='https://artists.landr.com/692531057471'>Bleach Links</a>
 			</div>
 		</div>
-		<div class="parallaxImage shiftImage"></div>
-
-		<div class="container-fluid blue">
-			<div class="articleTitle row">
-				<h2 class="col">Indigo Who?</h2>
-			</div>
-			<div class="articleBody row">
-				<p class="col">After playing BBC Introducing sessions and selling out in HMV, Grimsby Indie rockers, Indigo Bay, launch their first professionally recorded release 'For My Love'.  Recorded by Sugar House and mastered by Robin Schmidt, they land with a pleading message addressing toxic masculinity, bringing their ethereal guitar melodies, pumping drum loops and dreamy vocals.  This project aims to get men to address their feelings through 1-1 discussions whilst providing a sonic escape.</p>
-				<div class="col">
-					<h3>Follow us on Facebook, Twitter & Instagram</br><a href="#">@theindigobay</a></h3>
-					<img src="resources/images/lincoln imp/indigo-bay.jpg" alt="Indigo Bay Performing at the Lincoln Imp in Scunthorpe" style="width:400px;" class="desktop">
-				</div>
-			</div>
+		<div class='parallax'></div>
+		<div id='intro' class='secondary'>
+			<h2>Indigo Who?</h2>
+			<p>After playing BBC introducing sessions and selling out in HMV, the Grimsby Indie Rockers Indigo Bay, have now released multiple songs recorded at the Liverpool based studio <a href='https://sugarhousemusic.co.uk/'>Sugar House Music</a> and mastered by Robin Shmidt.  Their main goal with their music is to address the wrongs in society and correct them.  Hoping to inspire everyone to fight through your down days and shine throughout your best.</p>
+			<p>Follow us on Facebook, Twitter &amp; Instagram <a>@theindigobay</a></p>
+			<img src='res/img/engine shed/stage-image.jpg' alt='Indigo Bay Playing At'/>
 		</div>
-
-		<div id="footer" class="liver">
+		<footer class='dark'>
 			<ul>
-				<li><a href="https://indigobay.uk/sitemap.html">SiteMap</a></li>
-				<li><a href="press-release.pdf">Press Release</a></li>
-				<li><a href="https://indigobay.uk/contact/">Contact Us</a></li>
-				<li><a href="https://github.com/the-indigo-bay/the-indigo-bay.github.io">View on GitHub</a></li>
+				<li>
+					<a href='./sitemap.html'>Sitemap</a>
+				</li>
+				<li>
+					<a href='./contact'>Contact Us</a>
+				</li>
+				<li>
+					<a href='https://github.com/the-indigo-bay/the-indigo-bay.github.io'>View on Github</a>
+				</li>
 			</ul>
-		</div>
-
-		<footer>
-			<div class="footerLeft">
-				<img href="resources/images/logos/amias_logo_light.png" class="footerElement "/>
-				<p class="footerElement" id="scrlBtn" onclick="topFunction()">Back to Top</p>
-			</div>
-			<p class="footerElement">Copyright &copy The Indigo Bay 2021</p>
+			<p>Copyright &copy; The Indigo Bay 2021</p>
 		</footer>
-				<!-- Javascript -->
-			<!-- Bootstrap -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-			
-			<!-- Other -->
-		<script src="resources/javascript/anchor.js"></script>
-		<script src="resources/javascript/parallax.js"></script>
-		<script src="resources/javascript/modal.js"></script>
+
+		<script src='./res/js/nav.js'></script>
 	</body>
 </html>

@@ -1,0 +1,35 @@
+body {
+	margin-bottom: 33px;
+	background-color: hsl(188, 65%, 72%);
+}
+
+.pageTop {
+	height: 50vh;
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/nerves.jpg");
+}
+
+.title {
+	font: "Pacifico", cursive;
+	top: 10vh;
+	left: 10vw;
+}
+
+#footer * {
+	color: white;
+}
+
+@media (min-width: 768px) {		/* Desktop */
+	.pageTop {
+		height: 70vh;
+	}
+}
+
+@media (min-width: 600px) {		/* Tablet */
+	.pageTop {
+		height: 60vh;
+	}
+}
+
+.table {
+	margin: 0;
+}

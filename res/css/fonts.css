@@ -1,0 +1,187 @@
+h1 {
+	font: 500 2rem/1.2 "Pacifico", cursive;
+	color: hsl(000, 0%, 100%);
+	text-align: center;
+}
+
+h2 {
+	font: 700 2rem/1.2 "Amatic SC", cursive;
+	color: hsl(000, 0%, 80%);
+	text-align: center;
+	margin: 0 10px 0 10px;
+}
+
+h3 {
+	font: 700 1rem/1.2 "Amatic SC", cursive;
+	color: hsl(174, 72%, 56%);
+	text-align: center;
+	padding: 10px 0 5px 0;
+}
+
+.sand .row .col h3 {
+	color: hsl(174, 72%, 30%);
+}
+
+.blue ul li {
+	color: hsl(100, 100%, 100%);
+}
+
+h4 {
+	font: 700 1rem/1.2 "Amatic SC", cursive;
+	color: hsl(60, 3%, 53%);
+	text-align: center;
+}
+
+h5 {
+	font: 500 0.8rem/1.2 "Raleway";
+	color: hsl(60, 3%, 53%);
+	text-align: center;
+}
+
+p {
+	font: 700 0.65rem/1.5 "Amatic SC", cursive;
+	color: hsl(000, 0%, 100%);
+	text-align: center;
+}
+
+li {
+	font: 700 1.25rem/1.5 "Amatic SC", cursive;
+	color: hsl(000, 0%, 33%);
+	list-style-type: none;
+}
+
+ul li{
+	text-align: center;
+}
+
+#footer ul li {
+	font: 700 0.65rem/1.5 "Amatic SC", cursive;
+	text-align: left;
+}
+
+label {
+	font: 100 0.65rem/1.2 "Raleway";
+	color: hsl(000, 0%, 33%);
+}
+
+input, textarea {
+	font: 100 0.65rem/1.2 "Raleway";
+}
+
+a {
+	text-decoration: underline;
+	color: hsl(24, 100%, 50%);
+}
+
+a:hover {
+	color: hsl(24, 100%, 40%);
+}
+
+input, button {
+	font: 700 0.65rem/1.5 "Amatic SC", cursive;
+}
+
+button.orange {
+	background-color: hsl(24, 100%, 50%);
+}
+
+button.orange:hover {
+	background-color: hsl(24, 100%, 40%);
+}
+
+li a {
+	text-decoration: none;
+}
+
+th, td {
+	text-align: center;
+}
+
+@media (min-width: 1281px) {		/* Desktop */
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	h5 {
+		font-size: 1rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	li {
+		font-size: 1rem;
+	}
+
+	.nav-item {
+		font-size: 1.5rem;
+		padding: 0 20px 0 20px;
+	}
+
+	label {
+		font-size: 1rem;
+	}
+
+	input, textarea {
+		font-size: 1rem;
+	}
+
+	button {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {		/* Tablet (portrait) */
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
+
+	h3 {
+		font-size: 0.95rem;
+	}
+
+	h4 {
+		font-size: 1.25rem;
+	}
+
+	h5 {
+		font-size: 0.9rem;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	li {
+		font-size: 0.8rem;
+	}
+
+	label {
+		font-size: 0.8rem;
+	}
+
+	input, textarea {
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {		/* Tablet (Landscape) */
+
+}

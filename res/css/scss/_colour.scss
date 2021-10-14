@@ -1,0 +1,70 @@
+$primary: #4599AE;	//Blue Green
+$secondary: #f8f2df;	//Eggshell
+$accent: #6cc7ef;	//Baby Blue
+$cta: #ba6651;		//Cedar Chest
+$light: #eaeeef;	//Cultured
+$dark: #0c191d;		//Rich Black FOGRA 29
+
+.primary {
+	background-color: $primary;
+	color: $light;
+	button, a.button {
+		background-color: $cta;
+		color: $light;
+		padding: 10px 5px 10px 5px;
+		border-radius: 10px;
+		margin: 2px;
+	}
+	a, button.a {
+		background-color: transparent;
+		color: $dark;
+	}
+}
+
+.secondary {
+	background-color: $secondary;
+	color: $dark;
+	button, a.button {
+		background-color: $cta;
+		color: $light;
+		padding: 10px 5px 10px 5px;
+		border-radius: 10px;
+		margin: 2px;
+	}
+	a, button.a {
+		background-color: transparent;
+		color: $cta;
+	}
+}
+
+.light {
+	background-color: $light;
+	color: $dark;
+	button, a.button {
+		background-color: $cta;
+		color: $light;
+		padding: 10px 5px 10px 5px;
+		border-radius: 10px;
+		margin: 2px;
+	}
+	a, button.a {
+		background-color: transparent;
+		color: $cta;
+	}
+}
+
+.dark {
+	background-color: $dark;
+	color: $light;
+	button, a.button {
+		background-color: $cta;
+		color: $light;
+		padding: 10px 5px 10px 5px;
+		border-radius: 10px;
+		margin: 2px;
+	}
+	a, button.a {
+		background-color: transparent;
+		color: $cta;
+	}
+}

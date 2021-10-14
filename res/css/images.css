@@ -1,0 +1,130 @@
+.imgFull {
+	width: 100vw;
+}
+
+.img-thumbnail {
+	width: 100px;
+}
+
+.imgBlur {
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.img1 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/performance-low.jpg");
+}
+
+.img2 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/performance-high.jpg");
+}
+
+.img3 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/alex.jpg");
+}
+
+.img4 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/amias-performance.jpg");
+}
+
+.img5 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/callum-creepy.jpg");
+}
+
+.img6 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/callum-smile.jpg");
+}
+
+.img7 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/george-1.jpg");
+}
+
+.img8 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/george-amias.jpg");
+}
+
+.img9 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/george-performance.jpg");
+}
+
+.img10 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/green-room.jpg");
+}
+
+.img11 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/the depot/performance-green.jpg");
+}
+
+.img12 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/alex-1.jpg");
+}
+
+.img13 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/goofy-one.jpg");
+}
+
+.img14 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/amias-playing-1.jpg");
+}
+
+.img15 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/callum-george.jpg");
+}
+
+.img16 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/between-songs.jpg");
+}
+
+.img17 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/serious-one.jpg");
+}
+
+.img18 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/stage-image.jpg");
+}
+
+.img19 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/engine shed/performance.jpg");
+}
+
+.img20 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/lincoln imp/callum-singing.jpg");
+}
+
+.img21 {
+	background-image: url("https://the-indigo-bay.github.io/resources/images/lincoln imp/indigo-bay.jpg");
+}
+
+.imgLogo img, .imgLogo {
+	width: 20px;
+}
+
+img.desktop {
+	display: none;
+}
+
+@media (min-width: 1281px) {
+	.imgLogo img, .imgLogo {
+		width: 40px;
+	}
+}
+
+.img-thumbnail {
+	width: 200px;
+}
+
+@media (min-width: 768px) {		/* Desktop */
+	.img-thumbnail {
+		width: 500px;
+	}
+	img.desktop {
+		display: inline;
+	}
+}
+
+
+@media (min-width: 600px) {		/* Desktop */
+	.img-thumbnail {
+		width: 200px;
+	}
+}

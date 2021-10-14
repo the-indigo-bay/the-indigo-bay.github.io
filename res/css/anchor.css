@@ -1,0 +1,13 @@
+#scrlBtn {
+	display: none;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#scrlBtn:hover {
+	color: hsl(0, 0%, 88%); /* Add a dark-grey background on hover */
+}
+
+html {
+	scroll-behavior: smooth;
+}
