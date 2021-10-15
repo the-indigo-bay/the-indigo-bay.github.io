@@ -62,6 +62,9 @@ html {
 					&[type='submit'], &[type='reset'] {
 						width: auto;
 						cursor: pointer;
+						&:focus {
+							opacity: 50%;
+						}
 					}
 					&:focus {
 						background-color: $dark;

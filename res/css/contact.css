@@ -271,6 +271,9 @@ html body main form input[type=submit], html body main form input[type=reset], h
   width: auto;
   cursor: pointer;
 }
+html body main form input[type=submit]:focus, html body main form input[type=reset]:focus, html body main form textarea[type=submit]:focus, html body main form textarea[type=reset]:focus {
+  opacity: 50%;
+}
 html body main form input:focus, html body main form textarea:focus {
   background-color: #0c191d;
   color: #eaeeef;
