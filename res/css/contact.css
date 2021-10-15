@@ -216,81 +216,73 @@ html body header #nav nav ul li a {
     font-size: 1.5rem;
   }
 }
-html body main #latest {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-html body main #latest img {
-  width: 40vw;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 7px;
-  border-color: #f8f2df;
-}
-html body main #latest #description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-html body main #latest iframe {
-  width: 70vw;
-  height: 80px;
-}
-html body main #latest #button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-html body main .parallax {
-  width: 100vw;
-  height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent, rgba(255, 255, 255, 0.5)), url("../img/engine shed/goofy-one.jpg");
-  background-attachment: fixed;
+html body main {
+  background-image: url("../img/the depot/callum-smile.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0 5vh 0;
 }
-html body main #intro {
+html body main form {
+  border-radius: 10px;
+  width: 90vw;
+  display: grid;
+  grid-template-areas: "name phone" "email subject" "content content" "button button";
+  align-items: center;
+  justify-items: center;
+}
+html body main form div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+html body main form section {
+  grid-area: button;
+}
+html body main form #name {
+  grid-area: name;
+}
+html body main form #phone {
+  grid-area: phone;
+}
+html body main form #subject {
+  grid-area: subject;
+}
+html body main form #email {
+  grid-area: email;
+}
+html body main form #body {
+  grid-area: content;
+}
+html body main form input, html body main form textarea {
+  font-family: "Amatic SC", cursive;
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: transparent transparent #6cc7ef #6cc7ef;
+  width: 90%;
+  transition: all 0.5s ease;
+}
+html body main form input[type=submit], html body main form input[type=reset], html body main form textarea[type=submit], html body main form textarea[type=reset] {
+  width: auto;
+  cursor: pointer;
+}
+html body main form input:focus, html body main form textarea:focus {
+  background-color: #0c191d;
+  color: #eaeeef;
+  border-color: #6cc7ef;
+  outline: none;
 }
 @media (min-width: 768px) {
-  html body main #latest {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    justify-items: center;
-    padding-bottom: 5vh;
+  html body main {
+    padding: 10vh 0 10vh 0;
   }
-  html body main #latest h2 {
-    grid-column: span 2;
-  }
-  html body main #latest img {
-    width: 20vw;
-  }
-  html body main #latest iframe {
-    width: 30vw;
-  }
-  html body main #latest #button {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  html body main #intro {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    grid-auto-flow: column;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 5vh;
-  }
-  html body main #intro img {
-    width: 30vw;
+  html body main form {
+    width: 60vw;
   }
 }
 html body footer {
@@ -312,4 +304,4 @@ html body footer ul {
   }
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=contact.css.map */

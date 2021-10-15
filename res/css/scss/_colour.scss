@@ -8,12 +8,13 @@ $dark: #0c191d;		//Rich Black FOGRA 29
 .primary {
 	background-color: $primary;
 	color: $light;
-	button, a.button {
+	button, a.button, input[type='submit'], input[type='reset'] {
 		background-color: $cta;
 		color: $light;
 		padding: 10px 5px 10px 5px;
 		border-radius: 10px;
 		margin: 2px;
+		border: none;
 	}
 	a, button.a {
 		background-color: transparent;
@@ -24,12 +25,13 @@ $dark: #0c191d;		//Rich Black FOGRA 29
 .secondary {
 	background-color: $secondary;
 	color: $dark;
-	button, a.button {
+	button, a.button, input[type='submit'], input[type='reset'] {
 		background-color: $cta;
 		color: $light;
 		padding: 10px 5px 10px 5px;
 		border-radius: 10px;
 		margin: 2px;
+		border: none;
 	}
 	a, button.a {
 		background-color: transparent;
@@ -40,12 +42,13 @@ $dark: #0c191d;		//Rich Black FOGRA 29
 .light {
 	background-color: $light;
 	color: $dark;
-	button, a.button {
+	button, a.button, input[type='submit'], input[type='reset'] {
 		background-color: $cta;
 		color: $light;
 		padding: 10px 5px 10px 5px;
 		border-radius: 10px;
 		margin: 2px;
+		border: none;
 	}
 	a, button.a {
 		background-color: transparent;
@@ -56,15 +59,24 @@ $dark: #0c191d;		//Rich Black FOGRA 29
 .dark {
 	background-color: $dark;
 	color: $light;
-	button, a.button {
+	button, a.button, input[type='submit'], input[type='reset'] {
 		background-color: $cta;
 		color: $light;
 		padding: 10px 5px 10px 5px;
 		border-radius: 10px;
 		margin: 2px;
+		border: none;
 	}
 	a, button.a {
 		background-color: transparent;
 		color: $cta;
 	}
+}
+
+a, button {
+	transition: all 0.5s ease;
+}
+
+a:hover, button:hover {
+	opacity: 50%;
 }

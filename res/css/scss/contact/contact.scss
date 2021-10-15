@@ -1,0 +1,78 @@
+@import '../colour';
+@import '../fonts';
+
+html {
+	body {
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+		@import '../nav';
+		main {
+			background-image: url('../img/the\ depot/callum-smile.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5vh 0 5vh 0;
+			form {
+				border-radius: 10px;
+				width: 90vw;
+				display: grid;
+				grid-template-areas:
+					'name phone'
+					'email subject'
+					'content content'
+					'button button';
+				align-items: center;
+				justify-items: center;
+				div {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+				}
+				section {
+					grid-area: button;
+				}
+				#name {
+					grid-area: name;
+				}
+				#phone {
+					grid-area: phone;
+				}
+				#subject {
+					grid-area: subject;
+				}
+				#email {
+					grid-area: email;
+				}
+				#body {
+					grid-area: content;
+				}
+				input, textarea {
+					font-family: 'Amatic SC', cursive;
+					font-size: 1rem;
+					background-color: transparent;
+					border-color: transparent transparent $accent $accent;
+					width: 90%;
+					transition: all 0.5s ease;
+					&[type='submit'], &[type='reset'] {
+						width: auto;
+						cursor: pointer;
+					}
+					&:focus {
+						background-color: $dark;
+						color: $light;
+						border-color: $accent;
+						outline: none;
+					}
+				}
+			}
+		}
+		@import './media';
+		@import '../footer';
+	}
+}

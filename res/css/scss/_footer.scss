@@ -1,0 +1,19 @@
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 0.8rem;
+	ul {
+		list-style-type: none;
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		flex-direction: column;
+		p {
+			align-self: end;
+		}
+	}
+}

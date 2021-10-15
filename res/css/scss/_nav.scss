@@ -1,0 +1,113 @@
+header {
+	#title {
+		position: relative;
+		width: 100vw;
+		height: 70vh;
+		#background {
+			background-image: url('../img/the\ depot/amias-alex.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			filter: blur(10px);
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#text {
+			color: $light;
+			position: absolute;
+			top: 10vh;
+			left: 20vw;
+		}
+	}
+	#nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 90vw;
+		padding: 1vh 5vw 1vh 5vw;
+		position: relative;
+		svg {
+			width: 10vw;
+			cursor: pointer;
+			line {
+				transition: all 0.5s ease;
+				stroke: $light;
+				stroke-width: 5px;
+				stroke-linecap: round;
+				transform-origin: 10px;
+			}
+			&.show {
+				#top {
+					transform: rotate(45deg) scaleX(0.9);
+				}
+				#middle {
+					stroke: transparent;
+				}
+				#bottom {
+					transform: rotate(-45deg) scaleX(0.9);
+				}
+			}
+		}
+		nav {
+			z-index: 10;
+			width: 100%;
+			display: none;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100vw;
+			height: auto;
+			ul {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				list-style-type: none;
+				font-size: 2rem;
+				li {
+					ul {
+						display: none;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						padding: 0;
+						&#show {
+							display: flex;
+						}
+					}
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		#nav {
+			svg {
+				display: none;
+			}
+			nav {
+				width: 100%;
+				display: flex;
+				position: static;
+				ul {
+					width: 100%;
+					flex-direction: row;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}

@@ -216,83 +216,6 @@ html body header #nav nav ul li a {
     font-size: 1.5rem;
   }
 }
-html body main #latest {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-html body main #latest img {
-  width: 40vw;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 7px;
-  border-color: #f8f2df;
-}
-html body main #latest #description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-html body main #latest iframe {
-  width: 70vw;
-  height: 80px;
-}
-html body main #latest #button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-html body main .parallax {
-  width: 100vw;
-  height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent, rgba(255, 255, 255, 0.5)), url("../img/engine shed/goofy-one.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-html body main #intro {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 768px) {
-  html body main #latest {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    justify-items: center;
-    padding-bottom: 5vh;
-  }
-  html body main #latest h2 {
-    grid-column: span 2;
-  }
-  html body main #latest img {
-    width: 20vw;
-  }
-  html body main #latest iframe {
-    width: 30vw;
-  }
-  html body main #latest #button {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  html body main #intro {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    grid-auto-flow: column;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 5vh;
-  }
-  html body main #intro img {
-    width: 30vw;
-  }
-}
 html body footer {
   display: flex;
   flex-direction: row;
@@ -312,4 +235,4 @@ html body footer ul {
   }
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=dates.css.map */
