@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+	main {
+		#members {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			a {
+				img {
+					width: 15vw;
+					height: 15vw;
+				}
+			}
+		}
+		#member {
+			#main {
+				width: 35vw;
+				img {
+					width: 15vw;
+					height: 15vw;
+				}
+			}
+			#extra {
+				width: 45vw;
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+@import '../colour';
+@import '../fonts';
+
+html {
+	overflow-x: hidden;
+	body {
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+		@import '../nav';
+		main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			#members {
+				display: grid;
+				grid-template-columns: 50% 50%;
+				align-items: center;
+				justify-items: center;
+				width: 90vw;
+				a {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					align-items: center;
+					text-decoration: none;
+					img {
+						animation-name: hover;
+						animation-timing-function: ease-in-out;
+						animation-iteration-count: infinite;
+						width: 35vw;
+						height: 35vw;
+						border-radius: 50%;
+						object-fit: cover;
+						box-shadow: 2px 4px 6px 0 rgba($dark, 0.5);
+					}
+					&#alex {
+						img {
+							animation-delay: 0.2s;
+							animation-duration: 2.5s;
+						}
+					}
+					&#amias {
+						img {
+							animation-delay: 0.7s;
+							animation-duration: 2s;
+						}
+					}
+					&#callum {
+						img {
+							animation-delay: 1.6s;
+							animation-duration: 1.8s;
+						}
+					}
+					&#george {
+						img {
+							animation-duration: 2.3s;
+						}
+					}
+				}
+			}
+			#member {
+				#main {
+					margin: 5vh auto;
+					padding: 1vh 1vw;
+					width: 90vw;
+					border-radius: 10px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+					background-color: rgba($dark, 0.2);
+					img {
+						width: 40vw;
+						height: 40vw;
+						border-radius: 50%;
+						object-fit: cover;
+						box-shadow: 2px 4px 6px 0 rgba($dark, 0.5);
+						animation-name: hover;
+						animation-duration: 2s;
+						animation-iteration-count: infinite;
+						animation-timing-function: ease-in-out;
+					}
+				}
+				#extra {
+					margin: 5vh auto;
+					padding: 1vh 1vw;
+					width: 90vw;
+					background-color: rgba($accent, 0.5);
+					border-radius: 10px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+					table {
+						margin: 2vh 2vw;
+						border-collapse: collapse;
+						tr {
+							border-bottom-style: solid;
+							border-color: $secondary;
+							border-width: 1px;
+							*:first-child {
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+		}
+		@import './media';
+		@import '../footer';
+	}
+}
+
+@keyframes hover {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

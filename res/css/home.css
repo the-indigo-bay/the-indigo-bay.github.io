@@ -188,18 +188,29 @@ html body header #nav nav ul {
   list-style-type: none;
   font-size: 2rem;
 }
+html body header #nav nav ul li {
+  position: relative;
+}
 html body header #nav nav ul li ul {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 0 2vw;
+  background-color: #0c191d;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  height: 0;
+  transition: all 0.5s ease;
 }
-html body header #nav nav ul li ul#show {
+html body header #nav nav ul li:hover > ul {
   display: flex;
+  height: 40vh;
 }
 html body header #nav nav ul li a {
   text-decoration: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   html body header #nav svg {
