@@ -24,10 +24,6 @@ var ages = {
 	}
 };
 
-var d = new Date().getDate();
-var m = new Date().getMonth() + 1;
-var y = new Date().getFullYear();
-
 switch (name) {
 	case 'Alex Plater':
 		output.innerHTML += ' - (' + getAge(ages.alex) + ')';
@@ -45,6 +41,10 @@ switch (name) {
 
 
 function getAge(age) {
+	var d = new Date().getDate();
+	var m = new Date().getMonth() + 1;
+	var y = new Date().getFullYear();
+
 	if (age.m > m) {
 		return y - age.y;
 	} else if (age.m == m) {
