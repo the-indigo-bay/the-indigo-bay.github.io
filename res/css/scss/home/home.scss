@@ -41,13 +41,20 @@ html {
 				width: 100vw;
 				height: 60vh;
 				background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent, rgba(255, 255, 255, 0.5)), url('../img/engine\ shed/goofy-one.jpg');
-				background-attachment: fixed;
+				background-attachment: scroll;
 				background-size: cover;
-				background-repeat: no-repeat;
+				background-position: center;
+				&.ios {
+					background-attachment: scroll;
+				}
 			}
 			#intro {
 				display: flex;
 				flex-direction: column;
+				img {
+					width: 100vw;
+					height: auto;
+				}
 			}
 		}
 		@import './media';
